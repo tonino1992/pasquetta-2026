@@ -569,11 +569,46 @@
     ============================================================ */
     @media (max-width: 600px) {
       section {
-        padding: 4rem 1.2rem;
+        padding: 4rem 1rem 3rem;
+      }
+
+      .hero {
+        padding: 2rem 1rem 4rem;
+      }
+      
+      .hero::after {
+        height: 80px;
+        bottom: -40px;
+      }
+
+      .classici::before {
+        height: 80px;
+        top: -40px;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .section-title {
+        font-size: 1.7rem;
       }
 
       .cards-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .card-top {
+        height: 160px;
+      }
+
+      .card-emoji {
+        font-size: 4rem;
+      }
+
+      .card-body {
+        padding: 1.2rem 1.2rem 1.5rem;
       }
 
       .classici-list li {
@@ -594,7 +629,7 @@
   <header class="hero" id="top">
     <span class="hero-badge">🐣 Pasquetta 2026</span>
     <h1>Speciale Pasquetta:<br /><em>I Nostri Gourmet Burger</em></h1>
-    <p class="hero-sub">Festeggia il lunedì di Pasqua con gusto. Un menu pensato per chi ama le cose buone, fatte bene.
+    <p class="hero-sub">Festeggia il Pasquetta con gusto. Un menu pensato per chi ama le cose buone, fatte bene.
     </p>
     <div class="hero-scroll" aria-hidden="true">
       <span>Scorri</span>
@@ -674,7 +709,6 @@
             <li>Uovo</li>
             <li>Bacon croccante</li>
           </ul>
-          <span class="card-cta" aria-hidden="true">Scegli questo</span>
         </div>
       </article>
 
